@@ -619,6 +619,9 @@
   [v-box
    :children[[greeting]
              [property-data-input]
+             [:br]
+             [:br]
+             [:br]
              [footer-navigation]]])
 
 (defn rules-of-thumb

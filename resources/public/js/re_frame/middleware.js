@@ -289,4 +289,4 @@ return re_frame$middleware$on_changes;
 })()
 ,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"re-frame-factory-name","re-frame-factory-name",-1205706462),"on-changes"], null));
 
-//# sourceMappingURL=middleware.js.map?rel=1440296643868
+//# sourceMappingURL=middleware.js.map?rel=1440296858331
