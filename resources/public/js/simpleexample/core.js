@@ -383,4 +383,4 @@ return reagent.core.render.call(null,new cljs.core.PersistentVector(null, 1, 5, 
 });
 goog.exportSymbol('simpleexample.core.run', simpleexample.core.run);
 
-//# sourceMappingURL=core.js.map?rel=1440339745358
+//# sourceMappingURL=core.js.map?rel=1440343109322

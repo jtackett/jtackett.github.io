@@ -54,4 +54,4 @@ simpleexample.views.simple_example = (function simpleexample$views$simple_exampl
 return new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.views.greeting,"Welcome to Dental Insurance Procedure Code Library"], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.views.clock], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.views.color_input], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.views.procedure_code_input], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.views.procedure_info], null)], null);
 });
 
-//# sourceMappingURL=views.js.map?rel=1440339743755
+//# sourceMappingURL=views.js.map?rel=1440343107925

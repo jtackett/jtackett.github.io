@@ -277,4 +277,4 @@ re_frame.handlers.handle.call(null,event_v);
 return null;
 });
 
-//# sourceMappingURL=router.js.map?rel=1440339748112
+//# sourceMappingURL=router.js.map?rel=1440343111500
