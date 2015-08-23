@@ -28,8 +28,8 @@ return false;
 
 re_com.validate.log_error.cljs$lang$maxFixedArity = (0);
 
-re_com.validate.log_error.cljs$lang$applyTo = (function (seq15299){
-return re_com.validate.log_error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq15299));
+re_com.validate.log_error.cljs$lang$applyTo = (function (seq15308){
+return re_com.validate.log_error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq15308));
 });
 /**
  * Sends a message to the DeV Tools console as an warning. Returns true to indicate 'not and error' condition
@@ -47,8 +47,8 @@ return true;
 
 re_com.validate.log_warning.cljs$lang$maxFixedArity = (0);
 
-re_com.validate.log_warning.cljs$lang$applyTo = (function (seq15300){
-return re_com.validate.log_warning.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq15300));
+re_com.validate.log_warning.cljs$lang$applyTo = (function (seq15309){
+return re_com.validate.log_warning.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq15309));
 });
 re_com.validate.hash_map_with_name_keys = (function re_com$validate$hash_map_with_name_keys(v){
 return cljs.core.zipmap.call(null,cljs.core.map.call(null,new cljs.core.Keyword(null,"name","name",1843675177),v),v);
@@ -96,18 +96,18 @@ return re_com.validate.log_error.call(null,"Missing required argument(s): ",miss
  * :message - use this string in the message of the warning/error
  */
 re_com.validate.validate_fns_pass_QMARK_ = (function re_com$validate$validate_fns_pass_QMARK_(args_with_validators,passed_args,component_name){
-var validate_arg = (function (p__15303){
-var vec__15304 = p__15303;
-var _ = cljs.core.nth.call(null,vec__15304,(0),null);
-var v_arg_def = cljs.core.nth.call(null,vec__15304,(1),null);
+var validate_arg = (function (p__15312){
+var vec__15313 = p__15312;
+var _ = cljs.core.nth.call(null,vec__15313,(0),null);
+var v_arg_def = cljs.core.nth.call(null,vec__15313,(1),null);
 var arg_name = new cljs.core.Keyword(null,"name","name",1843675177).cljs$core$IFn$_invoke$arity$1(v_arg_def);
 var arg_val = re_com.util.deref_or_value.call(null,arg_name.call(null,passed_args));
 var required_QMARK_ = new cljs.core.Keyword(null,"required","required",1807647006).cljs$core$IFn$_invoke$arity$1(v_arg_def);
 var validate_result = new cljs.core.Keyword(null,"validate-fn","validate-fn",1430169944).cljs$core$IFn$_invoke$arity$1(v_arg_def).call(null,arg_val);
-var log_msg_base = ((function (arg_name,arg_val,required_QMARK_,validate_result,vec__15304,_,v_arg_def){
+var log_msg_base = ((function (arg_name,arg_val,required_QMARK_,validate_result,vec__15313,_,v_arg_def){
 return (function (){
 return [cljs.core.str("Validation failed for argument '"),cljs.core.str(arg_name),cljs.core.str("' in component '"),cljs.core.str(component_name),cljs.core.str("': ")].join('');
-});})(arg_name,arg_val,required_QMARK_,validate_result,vec__15304,_,v_arg_def))
+});})(arg_name,arg_val,required_QMARK_,validate_result,vec__15313,_,v_arg_def))
 ;
 if((validate_result === true) || (((arg_val == null)) && (cljs.core.not.call(null,required_QMARK_)))){
 return true;
@@ -160,12 +160,12 @@ return and__4321__auto__;
 
 re_com.validate.validate_args.cljs$lang$maxFixedArity = (2);
 
-re_com.validate.validate_args.cljs$lang$applyTo = (function (seq15305){
-var G__15306 = cljs.core.first.call(null,seq15305);
-var seq15305__$1 = cljs.core.next.call(null,seq15305);
-var G__15307 = cljs.core.first.call(null,seq15305__$1);
-var seq15305__$2 = cljs.core.next.call(null,seq15305__$1);
-return re_com.validate.validate_args.cljs$core$IFn$_invoke$arity$variadic(G__15306,G__15307,seq15305__$2);
+re_com.validate.validate_args.cljs$lang$applyTo = (function (seq15314){
+var G__15315 = cljs.core.first.call(null,seq15314);
+var seq15314__$1 = cljs.core.next.call(null,seq15314);
+var G__15316 = cljs.core.first.call(null,seq15314__$1);
+var seq15314__$2 = cljs.core.next.call(null,seq15314__$1);
+return re_com.validate.validate_args.cljs$core$IFn$_invoke$arity$variadic(G__15315,G__15316,seq15314__$2);
 });
 re_com.validate.justify_options = new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"start","start",-355208981),new cljs.core.Keyword(null,"end","end",-268185958),new cljs.core.Keyword(null,"center","center",-748944368),new cljs.core.Keyword(null,"between","between",1131099276),new cljs.core.Keyword(null,"around","around",-265975553)], null);
 re_com.validate.align_options = new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"start","start",-355208981),new cljs.core.Keyword(null,"end","end",-268185958),new cljs.core.Keyword(null,"center","center",-748944368),new cljs.core.Keyword(null,"baseline","baseline",1151033280),new cljs.core.Keyword(null,"stretch","stretch",-1888837380)], null);
@@ -223,8 +223,8 @@ return re_com.validate.validate_arg_against_set.call(null,arg,":position",re_com
  * Given a vector or list of codes, create a [:span] hiccup vector containing a comma separated list of the codes
  */
 re_com.validate.make_code_list = (function re_com$validate$make_code_list(codes){
-return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991)], null),cljs.core.interpose.call(null,", ",cljs.core.map.call(null,(function (p1__15308_SHARP_){
-return (new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"code","code",1586293142),[cljs.core.str(p1__15308_SHARP_)].join('')],null));
+return cljs.core.into.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"span","span",1394872991)], null),cljs.core.interpose.call(null,", ",cljs.core.map.call(null,(function (p1__15317_SHARP_){
+return (new cljs.core.PersistentVector(null,2,(5),cljs.core.PersistentVector.EMPTY_NODE,[new cljs.core.Keyword(null,"code","code",1586293142),[cljs.core.str(p1__15317_SHARP_)].join('')],null));
 }),codes)));
 });
 re_com.validate.justify_options_list = re_com.validate.make_code_list.call(null,re_com.validate.justify_options);
@@ -341,4 +341,4 @@ re_com.validate.set_or_atom_QMARK_ = (function re_com$validate$set_or_atom_QMARK
 return cljs.core.set_QMARK_.call(null,re_com.util.deref_or_value.call(null,arg));
 });
 
-//# sourceMappingURL=validate.js.map?rel=1440297548649
+//# sourceMappingURL=validate.js.map?rel=1440339750139

@@ -16,6 +16,7 @@
                                  v-box
                                  hyperlink
                                  h-box
+                                 gap
                                  throbber
                                  checkbox
                                  input-time
@@ -281,12 +282,10 @@
 ;; -- Code Lookup Panel -------------------------------------------------------------
 
 (defn simple-input
-  [t sym message sub k]
+  [t sym message sub k & suggestion-sub]
   [h-box
    :gap "1"
-   :children [
-
-              [h-box
+   :children [[h-box
                :children [[title
                            :label (str t)
                            :style {:font-size "300%"}]
@@ -299,11 +298,27 @@
                                    :value @sub
                                    :on-change #(dispatch
                                                 [k (-> % .-target .-value)])
-                                   :style {:font-size "300%"
-                                           :width "70%"
-                                           :height "70%"
-                                           :border "solid"
-                                           :border-radius "10px"}}]]]]])
+                                   :style (merge
+                                           {:font-size "300%"
+                                            :width "70%"
+                                            :height "70%"
+                                            :border "solid"
+                                            :border-radius "10px"}
+                                           (if suggestion-sub
+
+                                             (when @sub
+                                               (if
+                                                 (condp = t
+                                                   "Purchase Price "
+                                                   (< @sub @(first suggestion-sub))
+
+                                                   "Down Payment "
+                                                   (> @sub @(first suggestion-sub)))
+                                                 {:background-color "#A7FF89"}
+                                                 {:background-color "#FF9999"}))
+
+                                             (when @sub
+                                               {:background-color "#A7FF89"})))}]]]]])
 
 (defn simple-display
   [t sym message sub k]
@@ -325,8 +340,7 @@
   [t sym message sub k suggestion-sub]
   [v-box
    :children
-   [(simple-input t sym message sub k)
-    (when @suggestion-sub
+   [(when @suggestion-sub
       [v-box
        :gap "5px"
        :children
@@ -338,7 +352,8 @@
           [title
            :label (when (not (= "NaN" (pr-str @suggestion-sub)))
                     (string->currency (str @suggestion-sub)))
-           :style {:font-size "250%"}]]]]])]])
+           :style {:font-size "250%"}]]]]])
+    (simple-input t sym message sub k suggestion-sub)]])
 
 
 
