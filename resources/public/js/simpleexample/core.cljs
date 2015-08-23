@@ -288,22 +288,25 @@
    :children [[h-box
                :children [[title
                            :label (str t)
-                           :style {:font-size "300%"}]
-                          [info-button :info message]]]
+                           :style {:font-size "100%"}]
+                          [info-button
+                           :info message
+                           :width "10em"]]]
               [h-box
                :children [[title
                            :label sym
-                           :style {:font-size "300%"}]
+                           :style {:font-size "100%"}]
                           [:input {:type "text"
                                    :value @sub
                                    :on-change #(dispatch
                                                 [k (-> % .-target .-value)])
                                    :style (merge
-                                           {:font-size "300%"
+                                           {:font-size "100%"
                                             :width "70%"
                                             :height "70%"
                                             :border "solid"
-                                            :border-radius "10px"}
+                                            :border-width "1px"
+                                            :border-radius "5px"}
                                            (if suggestion-sub
 
                                              (when @sub
@@ -327,14 +330,15 @@
    :children [[h-box
                :children [[title
                            :label (str t)
-                           :style {:font-size "300%"}]
+                           :style {:font-size "100%"}]
                           [info-button
-                           :info message]]]
+                           :info message
+                           :width "10em"]]]
               [h-box
                :style {:margin-right "10%"}
                :children [[title
                            :label (str sym" "(string->currency (str @sub)))
-                           :style {:font-size "300%"}]]]]])
+                           :style {:font-size "100%"}]]]]])
 
 (defn input-with-suggestion
   [t sym message sub k suggestion-sub]
@@ -348,11 +352,11 @@
          :children
          [[title
            :label (str t " suggestions: ")
-           :style {:font-size "250%"}]
+           :style {:font-size "100%"}]
           [title
            :label (when (not (= "NaN" (pr-str @suggestion-sub)))
                     (string->currency (str @suggestion-sub)))
-           :style {:font-size "250%"}]]]]])
+           :style {:font-size "100%"}]]]]])
     (simple-input t sym message sub k suggestion-sub)]])
 
 
@@ -384,18 +388,11 @@
       [v-box
        :style {:margin-left "5%"}
        :children
-       [[:br]
-        [title
+       [[title
          :label "Property "
          :underline? true
-         :style {:font-size "350%"
+         :style {:font-size "150%"
                  :margin-top "0px"}]
-
-        [box
-         :style {:max-width "10px"}
-                           :child
-                           [md-icon-button
-                            :md-icon-name "zmdi-delete"]]
 
         (simple-input "Property Value "
                       "$"
@@ -422,7 +419,7 @@
         [title
          :label "Mortgage "
          :underline? true
-         :style {:font-size "350%"}]
+         :style {:font-size "150%"}]
         (input-with-suggestion "Down Payment "
                                "$"
                                "This is the amount you intend to pay upfront for the property.
@@ -447,7 +444,7 @@
         [title
          :label "Calculated Predictions "
          :underline? true
-         :style {:font-size "350%"}]
+         :style {:font-size "150%"}]
         (simple-display "Monthly Rent "
                         "$"
                         "This is the monthly rent you should be striving to charge for the apartment.
@@ -485,13 +482,13 @@
             [title
              :label "Passed"
              :style {:color "#A7FF89"
-                     :font-size "500%"
+                     :font-size "100%"
                      :text-shadow "0px 0px 3px #777"
                      :padding-left "35%"}]
             [title
              :label "Failed"
              :style {:color "#FF6666"
-                     :font-size "500%"
+                     :font-size "100%"
                      :text-shadow "0px 0px 3px #777"
                      :padding-left "35%"}]))]])))
 
@@ -508,7 +505,7 @@
        [[title
          :label "Rules"
          :underline? true
-         :style {:font-size "400%"}]
+         :style {:font-size "100%"}]
         (simple-input "Purchase Discount "
                       "%"
                       "This is the percent of the property value you plan to pay for the property.
@@ -548,9 +545,8 @@
    [:div.center.banner
     [title
      :label "REI Pocket Calculator"
-     :style {:font-size "500%"
-             :margin-left "20%"
-             :margin-bottom "0px"
+     :style {:font-size "200%"
+             :margin-left "10%"
              :color "whitesmoke"}]]
    [:br]])
 
@@ -672,6 +668,7 @@
   while building within a singlepage application"
   []
   [v-box
+   :width "100%"
    :children
    [(let [nav-panel  (subscribe [:nav-panel])]
       (when (not (nil? @nav-panel))
