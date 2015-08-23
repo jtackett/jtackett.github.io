@@ -533,8 +533,8 @@
    [:div.center.banner
     [title
      :label "REI Pocket Calculator"
-     :style {:font-size "600%"
-             :margin-left "10%"
+     :style {:font-size "500%"
+             :margin-left "20%"
              :margin-bottom "0px"
              :color "whitesmoke"}]]
    [:br]])
@@ -622,7 +622,12 @@
              [:br]
              [:br]
              [:br]
-
+             [:br]
+             [:br]
+             [:br]
+             [:br]
+             [:br]
+             [:br]
 
              [footer-navigation]]])
 

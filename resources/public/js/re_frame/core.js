@@ -49,4 +49,4 @@ return re_frame.handlers.register_base.call(null,id,new cljs.core.PersistentVect
 
 re_frame.core.register_handler.cljs$lang$maxFixedArity = 3;
 
-//# sourceMappingURL=core.js.map?rel=1440296858259
+//# sourceMappingURL=core.js.map?rel=1440297546165

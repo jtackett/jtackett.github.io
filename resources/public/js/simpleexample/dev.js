@@ -7,4 +7,4 @@ simpleexample.dev._main = (function simpleexample$dev$_main(){
 return simpleexample.core.run.call(null);
 });
 
-//# sourceMappingURL=dev.js.map?rel=1440296857018
+//# sourceMappingURL=dev.js.map?rel=1440297544907
