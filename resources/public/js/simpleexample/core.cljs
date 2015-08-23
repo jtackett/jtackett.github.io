@@ -373,7 +373,7 @@
         [title
          :label "Property "
          :underline? true
-         :style {:font-size "500%"
+         :style {:font-size "400%"
                  :margin-top "0px"}]
 
         [box
@@ -407,7 +407,7 @@
         [title
          :label "Mortgage "
          :underline? true
-         :style {:font-size "500%"}]
+         :style {:font-size "400%"}]
         (input-with-suggestion "Down Payment "
                                "$"
                                "This is the amount you intend to pay upfront for the property.
@@ -432,7 +432,7 @@
         [title
          :label "Calculated Predictions "
          :underline? true
-         :style {:font-size "500%"}]
+         :style {:font-size "400%"}]
         (simple-display "Monthly Rent "
                         "$"
                         "This is the monthly rent you should be striving to charge for the apartment.
@@ -622,6 +622,8 @@
              [:br]
              [:br]
              [:br]
+
+
              [footer-navigation]]])
 
 (defn rules-of-thumb
