@@ -482,13 +482,13 @@
             [title
              :label "Passed"
              :style {:color "#A7FF89"
-                     :font-size "100%"
+                     :font-size "200%"
                      :text-shadow "0px 0px 3px #777"
                      :padding-left "35%"}]
             [title
              :label "Failed"
              :style {:color "#FF6666"
-                     :font-size "100%"
+                     :font-size "200%"
                      :text-shadow "0px 0px 3px #777"
                      :padding-left "35%"}]))]])))
 
@@ -630,11 +630,6 @@
   [v-box
    :children[[greeting]
              [property-data-input]
-             [:br]
-             [:br]
-             [:br]
-             [:br]
-             [:br]
              [:br]
              [:br]
              [:br]
