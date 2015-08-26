@@ -15,11 +15,11 @@ button {
 
 .nav {
   text-align: center;
-  font-size: 100%;
+  font-size: 150%;
   margin-top: 2%;
   margin-bottom: 5%;
   border: 1px solid #777;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: whitesmoke;
 
 }
@@ -71,7 +71,7 @@ button {
 }
 
 .banner {
-  background-color: #3E76CC ;
+  background-color: #00008A ;
   text-align:center;
 }
 

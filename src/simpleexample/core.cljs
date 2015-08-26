@@ -131,7 +131,8 @@
                                      (:username x))
                                   (= password
                                      (:password x))))
-                     users))
+                     ;users
+                     []))
         "success"
         "failed")))))
 
@@ -293,6 +294,8 @@
                            :info message
                            :width "10em"]]]
               [h-box
+               :gap "10px"
+               :style {:padding-right "10px"}
                :children [[title
                            :label sym
                            :style {:font-size "100%"}]
@@ -302,13 +305,11 @@
                                                 [k (-> % .-target .-value)])
                                    :style (merge
                                            {:font-size "100%"
-                                            :width "70%"
-                                            :height "70%"
+                                            :height "100%"
                                             :border "solid"
                                             :border-width "1px"
-                                            :border-radius "5px"}
+                                            :border-radius "3px"}
                                            (if suggestion-sub
-
                                              (when @sub
                                                (if
                                                  (condp = t
@@ -317,11 +318,17 @@
 
                                                    "Down Payment "
                                                    (> @sub @(first suggestion-sub)))
-                                                 {:background-color "#A7FF89"}
-                                                 {:background-color "#FF9999"}))
+                                                 {:border-color "#A7FF89"
+                                                  :border-width "1px"
+                                                  :box-shadow "0px 0px 2px 1px #A7FF89"}
+                                                 {:border-color "#FF9999"
+                                                  :border-width "1px"
+                                                  :box-shadow "0px 0px 2px 1px #FF9999"}))
 
                                              (when @sub
-                                               {:background-color "#A7FF89"})))}]]]]])
+                                               {:border-color "#A7FF89"
+                                                :border-width "1px"
+                                                :box-shadow "0px 0px 2px 1px #A7FF89"})))}]]]]])
 
 (defn simple-display
   [t sym message sub k]
@@ -546,13 +553,14 @@
     [title
      :label "REI Pocket Calculator"
      :style {:font-size "200%"
-             :margin-left "10%"
-             :color "whitesmoke"}]]
+             :margin-left "15%"
+             :color "whitesmoke"
+             :font-family "\"Times New Roman\", Georgia, Serif"}]]
    [:br]])
 
 (defn footer-navigation
   []
-  (let []
+  (let [nav-panel (subscribe [:nav-panel])]
     [h-box
      :style {:position "fixed"
              :bottom 0}
@@ -560,14 +568,22 @@
      :min-width "100%"
      :height "10%"
      :children [[:button.trim.nav
-                 {:on-click
-                  #(dispatch
-                    [:nav-panel :investment-calculator])}
+                 (merge
+                  {:on-click
+                   #(dispatch
+                     [:nav-panel :investment-calculator])}
+                  (when (= @nav-panel :investment-calculator)
+                    {:style {:background-color "#373737"
+                             :color "#FFF"}}))
                  "Investment Calculator"]
                 [:button.trim.nav
-                 {:on-click
-                  #(dispatch
-                    [:nav-panel :rules-of-thumb])}
+                 (merge
+                  {:on-click
+                   #(dispatch
+                     [:nav-panel :rules-of-thumb])}
+                  (when (= @nav-panel :rules-of-thumb)
+                    {:style {:background-color "#373737"
+                             :color "#FFF"}}))
                  "Rules of Thumb"]]]))
 
 ;; -- Login -------------------------------------------------------------

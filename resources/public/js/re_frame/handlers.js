@@ -174,4 +174,4 @@ try{return handler_fn.call(null,re_frame.db.app_db,event_v);
 }
 });
 
-//# sourceMappingURL=handlers.js.map?rel=1440344458378
+//# sourceMappingURL=handlers.js.map?rel=1440622413168
