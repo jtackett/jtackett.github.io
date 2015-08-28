@@ -40,3 +40,4 @@ Limitations:
  - Most of this project was completed using global state, which can lose speed as the application scales. Because the application was so small, it seemed appropriate, but some of these features could be achieved using local state (local to the component that is)
  - I also did most of my css inline with the html, but in an ideal world and with more time, all of this would be abstracted to the example.css style sheet
  - Used both form 1 and form 2 reagent components. With more time, this would be refactored and optimized for speed based on the subs signal graph
+ - I'm not a designer...that's why it looks like a developer designed it...

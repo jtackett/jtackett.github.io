@@ -109,6 +109,7 @@
  (fn
    [game-board [db value]]
    (let [undo-position (subscribe [:undo-position])]
+     (dispatch [:switch-player]) ;;Switches the player back
      (mapv #(if (= @undo-position (:position %))
               (dissoc % :symbol)
               %)
@@ -279,14 +280,14 @@
       "X"
       {:style {:background-color "#373737"
                :color "#FFF"
-               :height "200px"}}
+               :height "100px"}}
 
       "O"
       {:style {:background-color "#373737"
                :color "#FFF"
-               :height "200px"}}
+               :height "100px"}}
 
-      {:height "200px"}))
+      {}))
    (or (:symbol cell-contents) "open")])
 
 (defn undo-button []
@@ -319,8 +320,9 @@
         progress (subscribe [:progress])]
     (fn []
       [v-box
-       :style {:margin-left "5%"
-               :margin-right "5%"}
+       :style
+       {:margin-left "5%"
+        :margin-right "20%"}
        :children
        [[title
          :label "Tic Tac Toe "
@@ -348,8 +350,6 @@
   (let [old-games (subscribe [:old-games])]
     (fn []
       [v-box
-       :style {:margin-left "5%"
-               :margin-bottom "20%"}
        :children
        [[title
          :label "Old Games"
