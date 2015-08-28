@@ -2,9 +2,9 @@
 goog.provide('simpleexample.dev');
 goog.require('cljs.core');
 goog.require('figwheel.client');
-goog.require('simpleexample.core');
+goog.require('simpleexample.ticTacToe');
 simpleexample.dev._main = (function simpleexample$dev$_main(){
-return simpleexample.core.run.call(null);
+return simpleexample.ticTacToe.run.call(null);
 });
 
-//# sourceMappingURL=dev.js.map?rel=1440622411033
+//# sourceMappingURL=dev.js.map?rel=1440774544737

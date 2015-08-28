@@ -1,5 +1,5 @@
 (ns simpleexample.dev
-  (:require [simpleexample.core :as example]
+  (:require [simpleexample.ticTacToe :as example]
             [figwheel.client :as fw]))
 
 #_(fw/start {:on-jsload example/run

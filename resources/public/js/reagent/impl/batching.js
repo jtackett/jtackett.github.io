@@ -49,14 +49,14 @@ var n__5218__auto__ = a.length;
 var i = (0);
 while(true){
 if((i < n__5218__auto__)){
-var c_12058 = (a[i]);
-if(cljs.core.truth_((c_12058["cljsIsDirty"]))){
-(c_12058["forceUpdate"])();
+var c_12383 = (a[i]);
+if(cljs.core.truth_((c_12383["cljsIsDirty"]))){
+(c_12383["forceUpdate"])();
 } else {
 }
 
-var G__12059 = (i + (1));
-i = G__12059;
+var G__12384 = (i + (1));
+i = G__12384;
 continue;
 } else {
 return null;
@@ -71,8 +71,8 @@ while(true){
 if((i < n__5218__auto__)){
 (a[i]).call(null);
 
-var G__12060 = (i + (1));
-i = G__12060;
+var G__12385 = (i + (1));
+i = G__12385;
 continue;
 } else {
 return null;
@@ -168,10 +168,10 @@ reagent.impl.batching.do_after_flush.call(null,f);
 return reagent.impl.batching.render_queue.schedule();
 });
 reagent.impl.batching.is_reagent_component = (function reagent$impl$batching$is_reagent_component(c){
-var G__12062 = c;
-var G__12062__$1 = (((G__12062 == null))?null:(G__12062["props"]));
-var G__12062__$2 = (((G__12062__$1 == null))?null:(G__12062__$1["argv"]));
-return G__12062__$2;
+var G__12387 = c;
+var G__12387__$1 = (((G__12387 == null))?null:(G__12387["props"]));
+var G__12387__$2 = (((G__12387__$1 == null))?null:(G__12387__$1["argv"]));
+return G__12387__$2;
 });
 reagent.impl.batching.run_reactively = (function reagent$impl$batching$run_reactively(c,run){
 if(cljs.core.truth_(reagent.impl.batching.is_reagent_component.call(null,c))){
@@ -200,10 +200,10 @@ return reagent.ratom.run.call(null,rat);
 }
 });
 reagent.impl.batching.dispose = (function reagent$impl$batching$dispose(c){
-var G__12064_12065 = (c["cljsRatom"]);
-var G__12064_12066__$1 = (((G__12064_12065 == null))?null:reagent.ratom.dispose_BANG_.call(null,G__12064_12065));
+var G__12389_12390 = (c["cljsRatom"]);
+var G__12389_12391__$1 = (((G__12389_12390 == null))?null:reagent.ratom.dispose_BANG_.call(null,G__12389_12390));
 
 return reagent.impl.batching.mark_rendered.call(null,c);
 });
 
-//# sourceMappingURL=batching.js.map?rel=1440622411655
+//# sourceMappingURL=batching.js.map?rel=1440774545283
