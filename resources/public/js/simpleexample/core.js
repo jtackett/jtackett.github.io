@@ -30,10 +30,10 @@ simpleexample.core.initial_state = cljs.core.PersistentHashMap.fromArrays([new c
 re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"initialize","initialize",609952913),(function (db,_){
 return cljs.core.merge.call(null,db,simpleexample.core.initial_state);
 }));
-re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"nav-panel","nav-panel",533208582),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"nav-panel","nav-panel",533208582)], null)),(function (nav_panel,p__10292){
-var vec__10293 = p__10292;
-var _ = cljs.core.nth.call(null,vec__10293,(0),null);
-var value = cljs.core.nth.call(null,vec__10293,(1),null);
+re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"nav-panel","nav-panel",533208582),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"nav-panel","nav-panel",533208582)], null)),(function (nav_panel,p__10296){
+var vec__10297 = p__10296;
+var _ = cljs.core.nth.call(null,vec__10297,(0),null);
+var value = cljs.core.nth.call(null,vec__10297,(1),null);
 return value;
 }));
 re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"logout","logout",1418564329),(function (){
@@ -73,31 +73,31 @@ return "failed";
 }
 }));
 }));
-re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"username","username",1605666410),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"username","username",1605666410)], null)),(function (username,p__10294){
-var vec__10295 = p__10294;
-var _ = cljs.core.nth.call(null,vec__10295,(0),null);
-var value = cljs.core.nth.call(null,vec__10295,(1),null);
-return value;
-}));
-re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"password","password",417022471),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"password","password",417022471)], null)),(function (password,p__10296){
-var vec__10297 = p__10296;
-var _ = cljs.core.nth.call(null,vec__10297,(0),null);
-var value = cljs.core.nth.call(null,vec__10297,(1),null);
-return value;
-}));
-re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"check-login","check-login",-1362423274),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"check-login","check-login",-1362423274)], null)),(function (check_login,p__10298){
+re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"username","username",1605666410),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"username","username",1605666410)], null)),(function (username,p__10298){
 var vec__10299 = p__10298;
-var db = cljs.core.nth.call(null,vec__10299,(0),null);
+var _ = cljs.core.nth.call(null,vec__10299,(0),null);
 var value = cljs.core.nth.call(null,vec__10299,(1),null);
+return value;
+}));
+re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"password","password",417022471),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"password","password",417022471)], null)),(function (password,p__10300){
+var vec__10301 = p__10300;
+var _ = cljs.core.nth.call(null,vec__10301,(0),null);
+var value = cljs.core.nth.call(null,vec__10301,(1),null);
+return value;
+}));
+re_frame.core.register_handler.call(null,new cljs.core.Keyword(null,"check-login","check-login",-1362423274),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"check-login","check-login",-1362423274)], null)),(function (check_login,p__10302){
+var vec__10303 = p__10302;
+var db = cljs.core.nth.call(null,vec__10303,(0),null);
+var value = cljs.core.nth.call(null,vec__10303,(1),null);
 re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"nav-panel","nav-panel",533208582),"check login"], null));
 
 return value;
 }));
 simpleexample.core.make_handler = (function simpleexample$core$make_handler(k){
-return re_frame.core.register_handler.call(null,cljs.core.keyword.call(null,k),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.call(null,k)], null)),(function (k__$1,p__10302){
-var vec__10303 = p__10302;
-var _ = cljs.core.nth.call(null,vec__10303,(0),null);
-var value = cljs.core.nth.call(null,vec__10303,(1),null);
+return re_frame.core.register_handler.call(null,cljs.core.keyword.call(null,k),re_frame.core.path.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.core.keyword.call(null,k)], null)),(function (k__$1,p__10306){
+var vec__10307 = p__10306;
+var _ = cljs.core.nth.call(null,vec__10307,(0),null);
+var value = cljs.core.nth.call(null,vec__10307,(1),null);
 return value;
 }));
 });
@@ -208,17 +208,17 @@ return simpleexample.core.simple_input.cljs$core$IFn$_invoke$arity$variadic((arg
 });
 
 simpleexample.core.simple_input.cljs$core$IFn$_invoke$arity$variadic = (function (t,sym,message,sub,k,suggestion_sub){
-return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"gap","gap",80255254),"1",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.title,new cljs.core.Keyword(null,"label","label",1718410804),[cljs.core.str(t)].join(''),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"100%"], null)], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.info_button,new cljs.core.Keyword(null,"info","info",-317069002),message,new cljs.core.Keyword(null,"width","width",-384071477),"10em"], null)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"gap","gap",80255254),"10px",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"padding-right","padding-right",-1250249681),"10px"], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.title,new cljs.core.Keyword(null,"label","label",1718410804),sym,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"100%"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref.call(null,sub),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__10304_SHARP_){
-return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,p1__10304_SHARP_.target.value], null));
-}),new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"100%",new cljs.core.Keyword(null,"height","height",1025178622),"100%",new cljs.core.Keyword(null,"border","border",1444987323),"solid",new cljs.core.Keyword(null,"border-width","border-width",-1512605390),"1px",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"3px"], null),(cljs.core.truth_(suggestion_sub)?(cljs.core.truth_(cljs.core.deref.call(null,sub))?(((function (){var pred__10311 = cljs.core._EQ_;
-var expr__10312 = t;
-if(cljs.core.truth_(pred__10311.call(null,"Purchase Price ",expr__10312))){
+return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"gap","gap",80255254),"1",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.title,new cljs.core.Keyword(null,"label","label",1718410804),[cljs.core.str(t)].join(''),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"100%"], null)], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.info_button,new cljs.core.Keyword(null,"info","info",-317069002),message,new cljs.core.Keyword(null,"width","width",-384071477),"10em"], null)], null)], null),new cljs.core.PersistentVector(null, 7, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"gap","gap",80255254),"10px",new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"padding-right","padding-right",-1250249681),"10px"], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.title,new cljs.core.Keyword(null,"label","label",1718410804),sym,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"100%"], null)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref.call(null,sub),new cljs.core.Keyword(null,"on-change","on-change",-732046149),(function (p1__10308_SHARP_){
+return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [k,p1__10308_SHARP_.target.value], null));
+}),new cljs.core.Keyword(null,"style","style",-496642736),cljs.core.merge.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"100%",new cljs.core.Keyword(null,"height","height",1025178622),"100%",new cljs.core.Keyword(null,"border","border",1444987323),"solid",new cljs.core.Keyword(null,"border-width","border-width",-1512605390),"1px",new cljs.core.Keyword(null,"border-radius","border-radius",419594011),"3px"], null),(cljs.core.truth_(suggestion_sub)?(cljs.core.truth_(cljs.core.deref.call(null,sub))?(((function (){var pred__10315 = cljs.core._EQ_;
+var expr__10316 = t;
+if(cljs.core.truth_(pred__10315.call(null,"Purchase Price ",expr__10316))){
 return (cljs.core.deref.call(null,sub) < cljs.core.deref.call(null,cljs.core.first.call(null,suggestion_sub)));
 } else {
-if(cljs.core.truth_(pred__10311.call(null,"Down Payment ",expr__10312))){
+if(cljs.core.truth_(pred__10315.call(null,"Down Payment ",expr__10316))){
 return (cljs.core.deref.call(null,sub) > cljs.core.deref.call(null,cljs.core.first.call(null,suggestion_sub)));
 } else {
-throw (new Error([cljs.core.str("No matching clause: "),cljs.core.str(expr__10312)].join('')));
+throw (new Error([cljs.core.str("No matching clause: "),cljs.core.str(expr__10316)].join('')));
 }
 }
 })())?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"border-color","border-color",-2059162761),"#A7FF89",new cljs.core.Keyword(null,"border-width","border-width",-1512605390),"1px",new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),"0px 0px 2px 1px #A7FF89"], null):new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"border-color","border-color",-2059162761),"#FF9999",new cljs.core.Keyword(null,"border-width","border-width",-1512605390),"1px",new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),"0px 0px 2px 1px #FF9999"], null)):null):(cljs.core.truth_(cljs.core.deref.call(null,sub))?new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"border-color","border-color",-2059162761),"#A7FF89",new cljs.core.Keyword(null,"border-width","border-width",-1512605390),"1px",new cljs.core.Keyword(null,"box-shadow","box-shadow",1600206755),"0px 0px 2px 1px #A7FF89"], null):null)))], null)], null)], null)], null)], null)], null);
@@ -226,18 +226,18 @@ throw (new Error([cljs.core.str("No matching clause: "),cljs.core.str(expr__1031
 
 simpleexample.core.simple_input.cljs$lang$maxFixedArity = (5);
 
-simpleexample.core.simple_input.cljs$lang$applyTo = (function (seq10305){
-var G__10306 = cljs.core.first.call(null,seq10305);
-var seq10305__$1 = cljs.core.next.call(null,seq10305);
-var G__10307 = cljs.core.first.call(null,seq10305__$1);
-var seq10305__$2 = cljs.core.next.call(null,seq10305__$1);
-var G__10308 = cljs.core.first.call(null,seq10305__$2);
-var seq10305__$3 = cljs.core.next.call(null,seq10305__$2);
-var G__10309 = cljs.core.first.call(null,seq10305__$3);
-var seq10305__$4 = cljs.core.next.call(null,seq10305__$3);
-var G__10310 = cljs.core.first.call(null,seq10305__$4);
-var seq10305__$5 = cljs.core.next.call(null,seq10305__$4);
-return simpleexample.core.simple_input.cljs$core$IFn$_invoke$arity$variadic(G__10306,G__10307,G__10308,G__10309,G__10310,seq10305__$5);
+simpleexample.core.simple_input.cljs$lang$applyTo = (function (seq10309){
+var G__10310 = cljs.core.first.call(null,seq10309);
+var seq10309__$1 = cljs.core.next.call(null,seq10309);
+var G__10311 = cljs.core.first.call(null,seq10309__$1);
+var seq10309__$2 = cljs.core.next.call(null,seq10309__$1);
+var G__10312 = cljs.core.first.call(null,seq10309__$2);
+var seq10309__$3 = cljs.core.next.call(null,seq10309__$2);
+var G__10313 = cljs.core.first.call(null,seq10309__$3);
+var seq10309__$4 = cljs.core.next.call(null,seq10309__$3);
+var G__10314 = cljs.core.first.call(null,seq10309__$4);
+var seq10309__$5 = cljs.core.next.call(null,seq10309__$4);
+return simpleexample.core.simple_input.cljs$core$IFn$_invoke$arity$variadic(G__10310,G__10311,G__10312,G__10313,G__10314,seq10309__$5);
 });
 simpleexample.core.simple_display = (function simpleexample$core$simple_display(t,sym,message,sub,k){
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"gap","gap",80255254),"1",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.title,new cljs.core.Keyword(null,"label","label",1718410804),[cljs.core.str(t)].join(''),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"100%"], null)], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.info_button,new cljs.core.Keyword(null,"info","info",-317069002),message,new cljs.core.Keyword(null,"width","width",-384071477),"10em"], null)], null)], null),new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.h_box,new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"margin-right","margin-right",809689658),"10%"], null),new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.title,new cljs.core.Keyword(null,"label","label",1718410804),[cljs.core.str(sym),cljs.core.str(" "),cljs.core.str(simpleexample.core.string__GT_currency.call(null,[cljs.core.str(cljs.core.deref.call(null,sub))].join('')))].join(''),new cljs.core.Keyword(null,"style","style",-496642736),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"font-size","font-size",-1847940346),"100%"], null)], null)], null)], null)], null)], null);
@@ -294,12 +294,12 @@ simpleexample.core.login_form = (function simpleexample$core$login_form(){
 var username = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"username","username",1605666410)], null));
 var password = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"password","password",417022471)], null));
 return new cljs.core.PersistentVector(null, 10, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div.login","div.login",1729923461),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"br","br",934104792)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"br","br",934104792)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"br","br",934104792)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"h1","h1",-1896887462),"LOGIN"], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"text",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref.call(null,username),new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (username,password){
-return (function (p1__10314_SHARP_){
-return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"username","username",1605666410),p1__10314_SHARP_.target.value], null));
+return (function (p1__10318_SHARP_){
+return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"username","username",1605666410),p1__10318_SHARP_.target.value], null));
 });})(username,password))
 ], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"br","br",934104792)], null),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"input","input",556931961),new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"type","type",1174270348),"password",new cljs.core.Keyword(null,"value","value",305978217),cljs.core.deref.call(null,password),new cljs.core.Keyword(null,"on-change","on-change",-732046149),((function (username,password){
-return (function (p1__10315_SHARP_){
-return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"password","password",417022471),p1__10315_SHARP_.target.value], null));
+return (function (p1__10319_SHARP_){
+return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"password","password",417022471),p1__10319_SHARP_.target.value], null));
 });})(username,password))
 ], null)], null),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"br","br",934104792)], null),new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button.small","button.small",-1573974800),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),((function (username,password){
 return (function (){
@@ -357,18 +357,18 @@ return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMP
 simpleexample.core.simple_example = (function simpleexample$core$simple_example(){
 return new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [re_com.core.v_box,new cljs.core.Keyword(null,"width","width",-384071477),"100%",new cljs.core.Keyword(null,"children","children",-940561982),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [(function (){var nav_panel = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"nav-panel","nav-panel",533208582)], null));
 if(!((cljs.core.deref.call(null,nav_panel) == null))){
-var pred__10319 = cljs.core._EQ_;
-var expr__10320 = cljs.core.deref.call(null,nav_panel);
-if(cljs.core.truth_(pred__10319.call(null,new cljs.core.Keyword(null,"investment-calculator","investment-calculator",421949679),expr__10320))){
+var pred__10323 = cljs.core._EQ_;
+var expr__10324 = cljs.core.deref.call(null,nav_panel);
+if(cljs.core.truth_(pred__10323.call(null,new cljs.core.Keyword(null,"investment-calculator","investment-calculator",421949679),expr__10324))){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.core.investment_calculator], null)], null);
 } else {
-if(cljs.core.truth_(pred__10319.call(null,new cljs.core.Keyword(null,"rules-of-thumb","rules-of-thumb",748009545),expr__10320))){
+if(cljs.core.truth_(pred__10323.call(null,new cljs.core.Keyword(null,"rules-of-thumb","rules-of-thumb",748009545),expr__10324))){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.core.rules_of_thumb], null)], null);
 } else {
-if(cljs.core.truth_(pred__10319.call(null,"login",expr__10320))){
+if(cljs.core.truth_(pred__10323.call(null,"login",expr__10324))){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.core.login], null)], null);
 } else {
-if(cljs.core.truth_(pred__10319.call(null,"check login",expr__10320))){
+if(cljs.core.truth_(pred__10323.call(null,"check login",expr__10324))){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.core.check_login], null)], null);
 } else {
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"div","div",1057191632),new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [simpleexample.core.login], null)], null);
@@ -388,4 +388,4 @@ return reagent.core.render.call(null,new cljs.core.PersistentVector(null, 1, 5, 
 });
 goog.exportSymbol('simpleexample.core.run', simpleexample.core.run);
 
-//# sourceMappingURL=core.js.map?rel=1440775504661
+//# sourceMappingURL=core.js.map?rel=1440776935583

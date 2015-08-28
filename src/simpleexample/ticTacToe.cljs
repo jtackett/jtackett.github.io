@@ -59,7 +59,9 @@
    :nav-panel :current-game
    :old-games []
    :undo-position nil
-   :ai? false})
+   :ai? false
+   :x-wins 0
+   :o-wins 0})
 
 ;; -- Event Handlers ----------------------------------------------------------
 
@@ -124,6 +126,22 @@
      (if (= @players-turn "X")
        "O"
        "X"))))
+
+(register-handler
+ :x-wins
+ (path [:x-wins])            ;; this is middleware
+ (fn
+   [x-wins [db value]]
+   (let [x-wins (subscribe [:x-wins])]
+     (inc @x-wins))))
+
+(register-handler
+ :o-wins
+ (path [:o-wins])            ;; this is middleware
+ (fn
+   [o-wins [db value]]
+   (let [o-wins (subscribe [:o-wins])]
+     (inc @o-wins))))
 
 
 (register-handler
@@ -199,6 +217,9 @@
     (if-let [winner (check-winner (mapv :symbol board))]
       (do
         (dispatch [:save board]) ;; Async side effect
+        (if (= "X" winner)
+          (dispatch [:x-wins])
+          (dispatch [:o-wins]))
         (js/alert (str "The WINNER is....." winner "!!!"))
         (make-new-board))
       board)))
@@ -249,6 +270,8 @@
 (make-sub "old-games")
 (make-sub "undo-position")
 (make-sub "ai")
+(make-sub "o-wins")
+(make-sub "x-wins")
 
 (register-sub
  :progress
@@ -347,14 +370,33 @@
 
 (defn old-game
   []
-  (let [old-games (subscribe [:old-games])]
+  (let [old-games (subscribe [:old-games])
+        x-wins (subscribe [:x-wins])
+        o-wins (subscribe [:o-wins])]
     (fn []
       [v-box
+       :style
+       {:margin-left "5%"
+        :margin-right "20%"
+        :margin-bottom "30%"}
        :children
        [[title
          :label "Old Games"
          :underline? true
          :style {:font-size "150%"}]
+        [title
+         :label (str "X's have won: " @x-wins "  and O's have won " @o-wins "... "
+                     (when (> (+ @x-wins @o-wins) 0)
+                       (cond
+                        (> @x-wins @o-wins)
+                         "Great Job X's"
+
+                        (< @x-wins @o-wins)
+                         "Great Job O's"
+
+                        (= @x-wins @o-wins)
+                        "May the best man/woman win!")))
+         :level :level2]
         [v-box
          :gap "20px"
          :max-width "70%"

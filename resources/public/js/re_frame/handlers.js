@@ -13,51 +13,51 @@ return new cljs.core.Keyword(null,"re-frame-factory-name","re-frame-factory-name
 var factory_names_in = (function re_frame$handlers$report_middleware_factories_$_factory_names_in(v__$1){
 return cljs.core.remove.call(null,cljs.core.nil_QMARK_,cljs.core.map.call(null,name_of_factory,v__$1));
 });
-var seq__12726 = cljs.core.seq.call(null,factory_names_in.call(null,v));
-var chunk__12727 = null;
-var count__12728 = (0);
-var i__12729 = (0);
+var seq__12730 = cljs.core.seq.call(null,factory_names_in.call(null,v));
+var chunk__12731 = null;
+var count__12732 = (0);
+var i__12733 = (0);
 while(true){
-if((i__12729 < count__12728)){
-var name = cljs.core._nth.call(null,chunk__12727,i__12729);
+if((i__12733 < count__12732)){
+var name = cljs.core._nth.call(null,chunk__12731,i__12733);
 re_frame.utils.error.call(null,"re-frame: \"",name,"\" used incorrectly. Must be used like this \"(",name," ...)\", whereas you just used \"",name,"\".");
 
-var G__12730 = seq__12726;
-var G__12731 = chunk__12727;
-var G__12732 = count__12728;
-var G__12733 = (i__12729 + (1));
-seq__12726 = G__12730;
-chunk__12727 = G__12731;
-count__12728 = G__12732;
-i__12729 = G__12733;
+var G__12734 = seq__12730;
+var G__12735 = chunk__12731;
+var G__12736 = count__12732;
+var G__12737 = (i__12733 + (1));
+seq__12730 = G__12734;
+chunk__12731 = G__12735;
+count__12732 = G__12736;
+i__12733 = G__12737;
 continue;
 } else {
-var temp__4126__auto__ = cljs.core.seq.call(null,seq__12726);
+var temp__4126__auto__ = cljs.core.seq.call(null,seq__12730);
 if(temp__4126__auto__){
-var seq__12726__$1 = temp__4126__auto__;
-if(cljs.core.chunked_seq_QMARK_.call(null,seq__12726__$1)){
-var c__5118__auto__ = cljs.core.chunk_first.call(null,seq__12726__$1);
-var G__12734 = cljs.core.chunk_rest.call(null,seq__12726__$1);
-var G__12735 = c__5118__auto__;
-var G__12736 = cljs.core.count.call(null,c__5118__auto__);
-var G__12737 = (0);
-seq__12726 = G__12734;
-chunk__12727 = G__12735;
-count__12728 = G__12736;
-i__12729 = G__12737;
+var seq__12730__$1 = temp__4126__auto__;
+if(cljs.core.chunked_seq_QMARK_.call(null,seq__12730__$1)){
+var c__5118__auto__ = cljs.core.chunk_first.call(null,seq__12730__$1);
+var G__12738 = cljs.core.chunk_rest.call(null,seq__12730__$1);
+var G__12739 = c__5118__auto__;
+var G__12740 = cljs.core.count.call(null,c__5118__auto__);
+var G__12741 = (0);
+seq__12730 = G__12738;
+chunk__12731 = G__12739;
+count__12732 = G__12740;
+i__12733 = G__12741;
 continue;
 } else {
-var name = cljs.core.first.call(null,seq__12726__$1);
+var name = cljs.core.first.call(null,seq__12730__$1);
 re_frame.utils.error.call(null,"re-frame: \"",name,"\" used incorrectly. Must be used like this \"(",name," ...)\", whereas you just used \"",name,"\".");
 
-var G__12738 = cljs.core.next.call(null,seq__12726__$1);
-var G__12739 = null;
-var G__12740 = (0);
-var G__12741 = (0);
-seq__12726 = G__12738;
-chunk__12727 = G__12739;
-count__12728 = G__12740;
-i__12729 = G__12741;
+var G__12742 = cljs.core.next.call(null,seq__12730__$1);
+var G__12743 = null;
+var G__12744 = (0);
+var G__12745 = (0);
+seq__12730 = G__12742;
+chunk__12731 = G__12743;
+count__12732 = G__12744;
+i__12733 = G__12745;
 continue;
 }
 } else {
@@ -114,8 +114,8 @@ return cljs.core.reset_BANG_.call(null,re_frame.handlers.id__GT_fn,cljs.core.Per
  * generally be used.
  */
 re_frame.handlers.register_base = (function re_frame$handlers$register_base(){
-var G__12743 = arguments.length;
-switch (G__12743) {
+var G__12747 = arguments.length;
+switch (G__12747) {
 case 2:
 return re_frame.handlers.register_base.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -165,13 +165,13 @@ return re_frame.utils.error.call(null,"re-frame: no event handler registered for
 if(cljs.core.truth_(re_frame.handlers._STAR_handling_STAR_)){
 return re_frame.utils.error.call(null,"re-frame: while handling \"",re_frame.handlers._STAR_handling_STAR_,"\"  dispatch-sync was called for \"",event_v,"\". You can't call dispatch-sync in an event handler.");
 } else {
-var _STAR_handling_STAR_12746 = re_frame.handlers._STAR_handling_STAR_;
+var _STAR_handling_STAR_12750 = re_frame.handlers._STAR_handling_STAR_;
 re_frame.handlers._STAR_handling_STAR_ = event_v;
 
 try{return handler_fn.call(null,re_frame.db.app_db,event_v);
-}finally {re_frame.handlers._STAR_handling_STAR_ = _STAR_handling_STAR_12746;
+}finally {re_frame.handlers._STAR_handling_STAR_ = _STAR_handling_STAR_12750;
 }}
 }
 });
 
-//# sourceMappingURL=handlers.js.map?rel=1440775506911
+//# sourceMappingURL=handlers.js.map?rel=1440776938064

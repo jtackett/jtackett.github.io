@@ -23,8 +23,8 @@ re_frame.core.log_ex = re_frame.middleware.log_ex;
 re_frame.core.on_changes = re_frame.middleware.on_changes;
 re_frame.core.set_loggers_BANG_ = re_frame.utils.set_loggers_BANG_;
 re_frame.core.register_handler = (function re_frame$core$register_handler(){
-var G__12623 = arguments.length;
-switch (G__12623) {
+var G__12627 = arguments.length;
+switch (G__12627) {
 case 2:
 return re_frame.core.register_handler.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -49,4 +49,4 @@ return re_frame.handlers.register_base.call(null,id,new cljs.core.PersistentVect
 
 re_frame.core.register_handler.cljs$lang$maxFixedArity = 3;
 
-//# sourceMappingURL=core.js.map?rel=1440775506567
+//# sourceMappingURL=core.js.map?rel=1440776937720

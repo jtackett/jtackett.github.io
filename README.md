@@ -21,7 +21,7 @@ Include two of the following (pick whichever you think will best showcase your s
  - Save previous games to a database and view them.
      `(Did this using the local app state because I didn't have time to set up a database. I would have just stored straight edn in an s3 bucket because the data structure isn't complex enough to require a database)`
 
-BONUS:
+## BONUS
 Added an undo button
     `(basically because I remember getting upset as a child when I would click the wrong button on accident)`
 
@@ -35,9 +35,10 @@ This project also includes the real estate calculator if you want to take a look
     `Has a mortgage calculator that could be helpful to some people!`
 
 
-Limitations:
+## Limitations
  - Used a library called re-com which is basically a bootstrap for clojure, but it is only optimized for the chrome browser
  - Most of this project was completed using global state, which can lose speed as the application scales. Because the application was so small, it seemed appropriate, but some of these features could be achieved using local state (local to the component that is)
  - I also did most of my css inline with the html, but in an ideal world and with more time, all of this would be abstracted to the example.css style sheet
  - Used both form 1 and form 2 reagent components. With more time, this would be refactored and optimized for speed based on the subs signal graph
  - I'm not a designer...that's why it looks like a developer designed it...
+ - This designed for a webpage and not a mobile device

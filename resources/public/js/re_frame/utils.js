@@ -2,17 +2,17 @@
 goog.provide('re_frame.utils');
 goog.require('cljs.core');
 goog.require('clojure.set');
-re_frame.utils.default_loggers = new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"log","log",-1595516004),(function (p1__12749_SHARP_){
-return console.log(p1__12749_SHARP_);
-}),new cljs.core.Keyword(null,"warn","warn",-436710552),(function (p1__12750_SHARP_){
-return console.warn(p1__12750_SHARP_);
-}),new cljs.core.Keyword(null,"error","error",-978969032),(function (p1__12751_SHARP_){
-return console.error(p1__12751_SHARP_);
-}),new cljs.core.Keyword(null,"group","group",582596132),(function (p1__12752_SHARP_){
+re_frame.utils.default_loggers = new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"log","log",-1595516004),(function (p1__12753_SHARP_){
+return console.log(p1__12753_SHARP_);
+}),new cljs.core.Keyword(null,"warn","warn",-436710552),(function (p1__12754_SHARP_){
+return console.warn(p1__12754_SHARP_);
+}),new cljs.core.Keyword(null,"error","error",-978969032),(function (p1__12755_SHARP_){
+return console.error(p1__12755_SHARP_);
+}),new cljs.core.Keyword(null,"group","group",582596132),(function (p1__12756_SHARP_){
 if(cljs.core.truth_(console.group())){
-return console.group(p1__12752_SHARP_);
+return console.group(p1__12756_SHARP_);
 } else {
-return console.log(p1__12752_SHARP_);
+return console.log(p1__12756_SHARP_);
 }
 }),new cljs.core.Keyword(null,"groupEnd","groupEnd",-337721382),(function (){
 if(cljs.core.truth_(console.groupEnd())){
@@ -45,8 +45,8 @@ return new cljs.core.Keyword(null,"log","log",-1595516004).cljs$core$IFn$_invoke
 
 re_frame.utils.log.cljs$lang$maxFixedArity = (0);
 
-re_frame.utils.log.cljs$lang$applyTo = (function (seq12753){
-return re_frame.utils.log.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12753));
+re_frame.utils.log.cljs$lang$applyTo = (function (seq12757){
+return re_frame.utils.log.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12757));
 });
 re_frame.utils.warn = (function re_frame$utils$warn(){
 var argseq__5373__auto__ = ((((0) < arguments.length))?(new cljs.core.IndexedSeq(Array.prototype.slice.call(arguments,(0)),(0))):null);
@@ -59,8 +59,8 @@ return new cljs.core.Keyword(null,"warn","warn",-436710552).cljs$core$IFn$_invok
 
 re_frame.utils.warn.cljs$lang$maxFixedArity = (0);
 
-re_frame.utils.warn.cljs$lang$applyTo = (function (seq12754){
-return re_frame.utils.warn.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12754));
+re_frame.utils.warn.cljs$lang$applyTo = (function (seq12758){
+return re_frame.utils.warn.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12758));
 });
 re_frame.utils.group = (function re_frame$utils$group(){
 var argseq__5373__auto__ = ((((0) < arguments.length))?(new cljs.core.IndexedSeq(Array.prototype.slice.call(arguments,(0)),(0))):null);
@@ -73,8 +73,8 @@ return new cljs.core.Keyword(null,"group","group",582596132).cljs$core$IFn$_invo
 
 re_frame.utils.group.cljs$lang$maxFixedArity = (0);
 
-re_frame.utils.group.cljs$lang$applyTo = (function (seq12755){
-return re_frame.utils.group.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12755));
+re_frame.utils.group.cljs$lang$applyTo = (function (seq12759){
+return re_frame.utils.group.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12759));
 });
 re_frame.utils.groupEnd = (function re_frame$utils$groupEnd(){
 var argseq__5373__auto__ = ((((0) < arguments.length))?(new cljs.core.IndexedSeq(Array.prototype.slice.call(arguments,(0)),(0))):null);
@@ -87,8 +87,8 @@ return new cljs.core.Keyword(null,"groupEnd","groupEnd",-337721382).cljs$core$IF
 
 re_frame.utils.groupEnd.cljs$lang$maxFixedArity = (0);
 
-re_frame.utils.groupEnd.cljs$lang$applyTo = (function (seq12756){
-return re_frame.utils.groupEnd.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12756));
+re_frame.utils.groupEnd.cljs$lang$applyTo = (function (seq12760){
+return re_frame.utils.groupEnd.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12760));
 });
 re_frame.utils.error = (function re_frame$utils$error(){
 var argseq__5373__auto__ = ((((0) < arguments.length))?(new cljs.core.IndexedSeq(Array.prototype.slice.call(arguments,(0)),(0))):null);
@@ -101,8 +101,8 @@ return new cljs.core.Keyword(null,"error","error",-978969032).cljs$core$IFn$_inv
 
 re_frame.utils.error.cljs$lang$maxFixedArity = (0);
 
-re_frame.utils.error.cljs$lang$applyTo = (function (seq12757){
-return re_frame.utils.error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12757));
+re_frame.utils.error.cljs$lang$applyTo = (function (seq12761){
+return re_frame.utils.error.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq.call(null,seq12761));
 });
 re_frame.utils.first_in_vector = (function re_frame$utils$first_in_vector(v){
 if(cljs.core.vector_QMARK_.call(null,v)){
@@ -112,4 +112,4 @@ return re_frame.utils.error.call(null,"re-frame: expected a vector event, but go
 }
 });
 
-//# sourceMappingURL=utils.js.map?rel=1440775506953
+//# sourceMappingURL=utils.js.map?rel=1440776938101
