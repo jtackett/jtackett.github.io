@@ -35,4 +35,4 @@ return handler_fn.call(null,re_frame.db.app_db,v);
 }
 });
 
-//# sourceMappingURL=subs.js.map?rel=1440776938034
+//# sourceMappingURL=subs.js.map?rel=1440777368387

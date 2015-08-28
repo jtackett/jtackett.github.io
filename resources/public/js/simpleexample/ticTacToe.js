@@ -64,12 +64,16 @@ var vec__10246 = p__10245;
 var db = cljs.core.nth.call(null,vec__10246,(0),null);
 var value = cljs.core.nth.call(null,vec__10246,(1),null);
 var undo_position = re_frame.core.subscribe.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"undo-position","undo-position",-1509970378)], null));
-re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switch-player","switch-player",1897002906)], null));
-
 return cljs.core.mapv.call(null,((function (undo_position,vec__10246,db,value){
 return (function (p1__10244_SHARP_){
 if(cljs.core._EQ_.call(null,cljs.core.deref.call(null,undo_position),new cljs.core.Keyword(null,"position","position",-2011731912).cljs$core$IFn$_invoke$arity$1(p1__10244_SHARP_))){
+if(cljs.core.truth_(new cljs.core.Keyword(null,"symbol","symbol",-1038572696).cljs$core$IFn$_invoke$arity$1(p1__10244_SHARP_))){
+re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"switch-player","switch-player",1897002906)], null));
+
 return cljs.core.dissoc.call(null,p1__10244_SHARP_,new cljs.core.Keyword(null,"symbol","symbol",-1038572696));
+} else {
+return null;
+}
 } else {
 return p1__10244_SHARP_;
 }
@@ -393,7 +397,7 @@ return simpleexample.ticTacToe.cell_button.cljs$core$IFn$_invoke$arity$variadic(
 simpleexample.ticTacToe.undo_button = (function simpleexample$ticTacToe$undo_button(){
 return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"button.trim.nav","button.trim.nav",764982581),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"on-click","on-click",1632826543),(function (){
 return re_frame.core.dispatch.call(null,new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"undo","undo",-1818036302)], null));
-})], null),"UNDO"], null);
+})], null),"UNDO Last Move"], null);
 });
 simpleexample.ticTacToe.display_board = (function simpleexample$ticTacToe$display_board(){
 var argseq__5373__auto__ = ((((1) < arguments.length))?(new cljs.core.IndexedSeq(Array.prototype.slice.call(arguments,(1)),(0))):null);
@@ -533,4 +537,4 @@ return reagent.core.render.call(null,new cljs.core.PersistentVector(null, 1, 5, 
 });
 goog.exportSymbol('simpleexample.ticTacToe.run', simpleexample.ticTacToe.run);
 
-//# sourceMappingURL=ticTacToe.js.map?rel=1440776935342
+//# sourceMappingURL=ticTacToe.js.map?rel=1440777365484

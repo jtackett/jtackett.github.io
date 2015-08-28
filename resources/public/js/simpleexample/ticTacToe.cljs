@@ -111,9 +111,12 @@
  (fn
    [game-board [db value]]
    (let [undo-position (subscribe [:undo-position])]
-     (dispatch [:switch-player]) ;;Switches the player back
+
      (mapv #(if (= @undo-position (:position %))
-              (dissoc % :symbol)
+              (if (:symbol %) ;;Make sure there is a symbol to dissoc
+                (do
+                  (dispatch [:switch-player]) ;;Switches the player back
+                  (dissoc % :symbol)))
               %)
            game-board))))
 
@@ -316,7 +319,7 @@
 (defn undo-button []
   [:button.trim.nav
    {:on-click #(dispatch [:undo])}
-   "UNDO"])
+   "UNDO Last Move"])
 
 (defn display-board
   [board & old?]
@@ -389,10 +392,10 @@
                      (when (> (+ @x-wins @o-wins) 0)
                        (cond
                         (> @x-wins @o-wins)
-                         "Great Job X's"
+                        "Great Job X's"
 
                         (< @x-wins @o-wins)
-                         "Great Job O's"
+                        "Great Job O's"
 
                         (= @x-wins @o-wins)
                         "May the best man/woman win!")))
